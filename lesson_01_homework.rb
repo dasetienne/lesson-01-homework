@@ -41,8 +41,8 @@ end
 puts "All good so far"
 #Checks if everything still works
 
-def full_name(f, l)
-  puts f.capitalize + " " + l.capitalize
+def full_name(first_name, last_name)
+  puts first_name.capitalize + " " + last_name.capitalize
 end
 #Defines full_name method with two arguments, capitalizes them and prints result with space to the console
 
@@ -57,33 +57,33 @@ full_name("bubba", "chuck")
 
 def add(first_number, second_number)
   result = first_number + second_number
-  puts result
 end
 
-add(17,10)
+puts add(17,10)
+#Added puts command outside of methods
 
 
 ## Enter the code for you 'join_strings' method below
 
 def translator(english_word,german_word)
   translation = english_word.capitalize + " " + german_word.capitalize
-  puts translation
 end
 
-translator("flowerpot","blumentopf")
+puts translator("flowerpot","blumentopf")
+puts translator("sinusitis", "Nasennebenhöhlenentzündung")
+#Added puts command outside of methods
 
 
 ## Enter your 'old_enough_to_vote?' method below
 
-def old_enough_to_vote (year)
+def old_enough_to_vote (year_born)
   
-  if year >= 18
+if year_born <= 1998
     puts "Congrats, do the right thing!"
-
-  else
+else
     puts "Come back later, till then: read up!"
 end
-
 end
 
-old_enough_to_vote(16)
+old_enough_to_vote(2000)
+old_enough_to_vote(1984)
